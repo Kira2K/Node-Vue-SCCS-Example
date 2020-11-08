@@ -5,7 +5,7 @@
 
     <p class="zero-elem-text" v-if="getAllProfiles.length === 0">Вы пока не создали ни одного профиля</p>
 
-    <router-link :to="'/newProfile'" class="big-blue-link" 
+    <router-link to="/newProfile" class="big-blue-link" 
       v-bind:class="[getAllProfiles.length === 0 ? 'big-blue-link_marginIfZero' : 'big-blue-link_marginIfNotZero' ]" >
       <p class="big-blue-link__text">Добавить профиль</p>
     </router-link>
@@ -93,7 +93,6 @@
 
       </div>
     </div>
-
    
   </div>
 </template>
@@ -124,3 +123,102 @@
 </script>
 
 <style lang="scss" scoped>
+  .subtitle {
+    font-size: 20px;
+    font-family: "Oswald";
+  }
+
+  .zero-elem-text {
+    margin-top: 33px;
+    font-size: 13px;
+  }
+
+  .big-blue-link {
+    width: 175px;
+    height: 38px;
+    border-radius: 3px;
+    background-color: #3f5baa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &_marginIfZero {
+      margin-top: 21px;
+      margin-bottom: 0px;
+    }
+
+    &_marginIfNotZero {
+      margin-top: 35px;
+      margin-bottom: 27px;
+    }
+
+    &__text {
+      font-size: 13px;
+      color: #ffffff;
+      text-align: center;
+    }
+  }
+
+  .single-content {
+    position: relative;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    :nth-child(2) {
+      margin-left: auto;
+    }
+    :nth-child(3) {
+      margin-left: 4px;
+      margin-right: 10px;
+    }
+
+    &:after {
+      @extend .divider;
+      margin: 0px 0px 0px 1px;
+    }
+
+    &__name {
+      font-size: 13px;
+      color: #3f5baa;
+    }
+
+    &__link {
+      margin-bottom: -1px;
+    }
+    
+    &__svg {
+      width: 21px;
+      height: 21px;
+      padding: 4px;
+      border: 1px #3F5BAA solid;
+      border-radius: 3px;
+
+      &:hover {
+        fill: black;
+        border-color: black;
+        .st1{display:inline;fill:black;}
+        .st2{fill:black;}
+        .st3{fill:black;}
+        .rect{fill:black;}
+      }
+    }
+  }
+
+  .divider {
+    content: '';
+    position: absolute;
+    width:100%;
+    bottom:0px;
+    height: 1px;
+    background-color: #e8e8e8;
+    left: 0;
+  }
+
+  .st0{display:none;}
+  .st1{display:inline;fill:#3F5BAA;}
+  .st2{fill:#3F5BAA;}
+  .st3{fill:#3E5BAA;}
+  .rect{fill-rule:evenodd;clip-rule:evenodd;fill:#3F5BAA;}
+
+</style>
