@@ -2,7 +2,7 @@
 
 Hi everyone!
 
-You are here to check out my Vue CLI and NodeJS skills, and i'm happy to show you my best. However, for last half year i was working on one big project, so it could have been harsh to understand anything in hundreds files and tens of thousands of strings. So i have decided to put in this repo just 3 files, by them i could show you my main skills.
+You are here to check out my Vue CLI and NodeJS skills, and i'm happy to show you my best. However, for last half year i was working on one big project, so it could have been hard to understand anything in hundreds files and tens of thousands of strings. So i have decided to put in this repo just 3 files, by them i could show you my main skills.
 
  1. In VuePart.vue you are welcome to check out my Vue CLI skills as well as BEM-layout.
  2. In StorePart.js there is standard Vue CLI Store logic. I have deliberately put here Axios as well as Fetch "action" examples.
