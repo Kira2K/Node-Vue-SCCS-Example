@@ -1,4 +1,4 @@
-# myJobSimpleExample
+# Node-Vue-SCCS-Example
 
 Hi everyone!
 
